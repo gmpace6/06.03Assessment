@@ -63,17 +63,10 @@ function canWeDeliver2(zipCode) {
 console.log(canWeDeliver2(89121))
 console.log(canWeDeliver2(85204))
 
-
 //////////////////PROBLEM 3////////////////////
 /* 
-    Below is an array of objects that have some
-    information about a couple of deals that are
-    available at the restaurant currently. 
-
-    You are going to access the object's properties 
-    and change some values. Don't edit the array 
-    directly, let's use the `replace` method.
-
+    Below is an array of objects that have some information about a couple of deals that are available at the restaurant currently. 
+    You are going to access the object's properties and change some values. Don't edit the array directly, let's use the `replace` method.
     Read on for more instructions.
 */
 
@@ -89,29 +82,21 @@ const deals = [
 ]
 
 /*
-    The owner has decided to take the 15% off
-    deal down to 10%.
-
-    Reassign the value of the first deal's title
-    to be itself, but use the `replace` method
-    to replace the 15 with a 10.
+    The owner has decided to take the 15% off deal down to 10%.
+    Reassign the value of the first deal's title to be itself, but use the `replace` method to replace the 15 with a 10.
 */
 
-//CODE HERE
-
-
+console.log("The owner is a cheapskate")
+const updatedDiscount = deals[0].title.replace("15", "10")
+deals[0].title = updatedDiscount
+console.log(deals)
 
 /*
-    The restaurant is going to continue its
-    family deal for another month. 
-
-    Reassign the value of the second deal's desc
-    to be itself, but use the `replace` method
-    to replace the word March with April.
-
-    You should also make sure that there is no
-    whitespace in this string, since it seems
-    to be displaying wrong on the live site.
+    The restaurant is going to continue its family deal for another month. 
+    Reassign the value of the second deal's desc to be itself, but use the `replace` method to replace the word March with April.
+    You should also make sure that there is no whitespace in this string, since it seems to be displaying wrong on the live site.
 */
 
-//CODE HERE
+const updatedTimeframe = deals[1].desc.trim().replace("March", "April")
+deals[1].desc = updatedTimeframe
+console.log(deals)
